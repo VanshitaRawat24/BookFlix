@@ -236,7 +236,7 @@ Content-Based Filtering – Pazzani & Billsus
 
 ---
 
-# 🙌 Author
+# 🙌 By
 
 Tamanna Arora , Vanshita Rawat
 Data Science | Machine Learning Enthusiast
