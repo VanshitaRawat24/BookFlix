@@ -1,245 +1,138 @@
-
 # 📚 BOOKFLIX – Smart Library Book Recommender System
 
-# 🚀 Overview
+## 🚀 Overview
+BOOKFLIX is a **hybrid book recommendation system** designed to help users discover relevant books from large digital libraries using Machine Learning and NLP techniques.
 
-BOOKFLIX is a hybrid book recommendation system designed to help users discover relevant books from large digital libraries. It combines multiple machine learning techniques to deliver personalized, diverse, and explainable recommendations.
-
-The system uses a triple-hybrid approach:
-
-Collaborative Filtering (SVD)
-
-Content-Based Filtering (TF-IDF)
-
-Association Rule Mining (FP-Growth)
-
-
+The system combines multiple algorithms to deliver **personalized, diverse, and explainable recommendations** through an interactive Netflix-style interface.
 
 ---
 
-# 🎯 Problem Statement
-
-With thousands of books available, users face:
-
-Information overload
-
-Cold-start problem (new users)
-
-Sparse ratings data
-
-Generic recommendations
-
-Lack of explainability
-
-
+## 🎯 Problem Statement
+Modern digital libraries face several challenges:
+- Information overload due to thousands of books  
+- Cold-start problem for new users  
+- Sparse user ratings  
+- Generic recommendations  
+- Lack of explainability  
 
 ---
 
-# 💡 Key Features
-
-🔁 Hybrid Recommendation Engine (CF + CBF + ARM)
-
-👤 Personalized Recommendations based on user behavior
-
-🆕 Cold-Start Handling via onboarding preferences
-
-🧠 Explainable AI (why a book is recommended)
-
-❤️ Wishlist & User History Tracking
-
-🎬 Netflix-style UI (Bookflix Interface)
-
-⚡ Fast Performance using pre-trained models
-
-
+## 💡 Key Features
+- 🔁 **Triple Hybrid Recommendation Engine** (CF + CBF + ARM)  
+- 👤 Personalized recommendations based on user behavior  
+- 🆕 Cold-start handling using onboarding preferences  
+- 🧠 Explainable AI ("Why this book?")  
+- ❤️ Wishlist & user history tracking  
+- 🎬 Netflix-style UI (Bookflix interface)  
+- ⚡ Fast performance using pre-trained models  
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Category	Tools
-
-Language	Python
-Framework	Streamlit
-Data Processing	Pandas, NumPy
-ML Algorithms	SVD (Surprise), TF-IDF (Scikit-learn)
-Pattern Mining	MLxtend (Apriori / FP-Growth)
-Visualization	Matplotlib, Seaborn
-Storage	Pickle, JSON
-Version Control	Git, GitHub
-
-
+| Category | Tools |
+|--------|------|
+| Language | Python |
+| Framework | Streamlit |
+| Data Processing | Pandas, NumPy |
+| ML Algorithms | SVD (Surprise), TF-IDF (Scikit-learn) |
+| Pattern Mining | MLxtend (Apriori / FP-Growth) |
+| Visualization | Matplotlib, Seaborn |
+| Storage | Pickle, JSON |
+| Version Control | Git, GitHub |
 
 ---
 
-# 📊 Dataset
+## 📊 Dataset
 
-Goodbooks-10K Dataset
+This project uses the **Goodbooks-10K dataset**:
 
-📚 10,000 books
+- 📚 10,000 books  
+- 👥 53,000+ users  
+- ⭐ ~6 million ratings  
 
-👥 53,000+ users
-
-⭐ ~6 million ratings
-
-
-
+🔗 Dataset Source: https://www.kaggle.com/datasets/alexanderfrosati/goodbooks-10k-updated  
 
 ---
 
-# ⚙️ System Architecture
+## ⚙️ System Architecture
 
-1. Data Layer
+### 1️⃣ Data Layer
+- Stores books, ratings, and wishlist data  
+- Preprocessed using Pandas  
 
-Stores books, ratings, and wishlist data
+### 2️⃣ Recommendation Engine
+- **Collaborative Filtering (SVD)** → learns user behavior  
+- **Content-Based Filtering (TF-IDF)** → finds similar books  
+- **Association Rule Mining (FP-Growth)** → identifies co-reading patterns  
 
-Preprocessed using Pandas
-
-
-2. Recommendation Engine
-
-Collaborative Filtering (SVD) → user behavior
-
-Content-Based Filtering → book similarity
-
-Association Rules → frequently read together
-
-
-3. Application Layer
-
-Streamlit-based interactive UI
-
-Real-time recommendations
-
-
+### 3️⃣ Application Layer
+- Streamlit-based interactive UI  
+- Real-time recommendation updates  
 
 ---
 
-# 🧠 Methodology
-
-1. Data Cleaning & Preprocessing
-
-
-2. Model Training (SVD, TF-IDF, FP-Growth)
-
-
-3. Hybrid Recommendation using Rank Fusion
-
-
-4. UI Development (Streamlit)
-
-
-5. Testing & Evaluation
-
-
-
+## 🧠 Methodology
+1. Data Cleaning & Preprocessing  
+2. Model Training (SVD, TF-IDF, FP-Growth)  
+3. Hybrid Recommendation using Rank Fusion  
+4. UI Development using Streamlit  
+5. Testing & Evaluation  
 
 ---
 
-# 📈 Results
+## 📈 Results
 
-🔹 Collaborative Filtering
+### 🔹 Collaborative Filtering
+- Precision@10 → **0.26**  
+- Recall@10 → **0.155**  
 
-Precision@10: 0.26
+### 🔹 Hybrid Model
+- Precision@15 → **0.0051**  
+- Recall@15 → **0.0431**  
+- Diversity Score → **1.0**  
+- Catalog Coverage → **7.92%**  
 
-Recall@10: 0.155
-
-
-🔹 Hybrid Model
-
-Precision@15: 0.0051
-
-Recall@15: 0.0431
-
-Diversity Score: 1.0
-
-Catalog Coverage: 7.92%
-
-
-👉 Hybrid model improves diversity & discovery, not just accuracy.
-
+👉 Focus: **Better discovery + diversity**, not just accuracy.
 
 ---
 
-# 🏆 Achievements
-
-Built a triple-hybrid recommendation system
-
-Solved cold-start problem for new users
-
-Achieved high diversity in recommendations
-
-Developed interactive Bookflix UI
-
-
+## 🏆 Achievements
+- Built a **triple-hybrid recommendation system**  
+- Solved the **cold-start problem**  
+- Achieved **high diversity in recommendations**  
+- Developed an interactive **Bookflix UI**  
 
 ---
 
-# ⚠️ Challenges Solved
-
-Data sparsity
-
-Cold-start problem
-
-Lack of trust (added explainability)
-
-Over-reliance on popular books
-
-
+## ⚠️ Challenges Solved
+- Data sparsity  
+- Cold-start problem  
+- Lack of explainability  
+- Over-reliance on popular books  
 
 ---
 
-# 🔮 Future Scope
-
-Deep Learning models (NCF, BERT)
-
-Real-time recommendation updates
-
-API integration (Google Books)
-
-Cloud deployment (Docker/Kubernetes)
-
-Multilingual support
-
-
+## 🔮 Future Scope
+- Deep Learning models (NCF, BERT)  
+- Real-time recommendation updates  
+- API integration (Google Books)  
+- Cloud deployment (Docker/Kubernetes)  
+- Multilingual support  
 
 ---
 
-# 📌 How to Run
+## 📌 How to Run
 
-**Clone the repository** :
-git clone https://github.com/your-username/bookflix.git
+```bash
+# Clone the repository
+git clone https://github.com/VanshitaRawat24/bookflix.git
 
-**Navigate to project folder** :
+# Navigate to project folder
 cd bookflix
 
-**Install dependencies** :
+# Install dependencies
 pip install -r requirements.txt
 
-**Run the app** :
+# Run the app
 streamlit run app.py
-
-
----
-
-# 📚 References
-
-Hybrid Recommender Systems – Burke (2002)
-
-Collaborative Filtering – Koren et al.
-
-Association Rule Mining – Agrawal & Srikant
-
-Content-Based Filtering – Pazzani & Billsus
-
-
-
----
-
-# 🙌 By
-
-Tamanna Arora , Vanshita Rawat
-Data Science | Machine Learning Enthusiast
-
-
-
