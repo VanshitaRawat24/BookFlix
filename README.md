@@ -1,122 +1,35 @@
-# 📚 BOOKFLIX – Smart Library Book Recommender System
+# 🔮 Lumina | Hybrid Book Recommender System
 
-## 📖 Overview
-BOOKFLIX is a **hybrid book recommendation system** that helps users discover books based on their preferences using Machine Learning and NLP techniques.
+A premium, AI-powered book recommendation engine built with **Python** and **Streamlit**. Lumina leverages a hybrid filtering approach to provide highly personalized book suggestions.
 
-The system combines **Collaborative Filtering, Content-Based Filtering, and Association Rule Mining** to generate accurate, diverse, and personalized recommendations.
+## 🚀 Features
+- **🏠 Intuitive Home**: Trending books and highly-rated classics.
+- **🔍 Deep Search**: Explore a repository of 10,000+ books with real-time filtering.
+- **🔮 Neural Recommendations**: Personalized suggestions using Triple-Engine logic:
+  - **Engine 1 (SVD)**: Singular Value Decomposition for Collaborative Filtering.
+  - **Engine 2 (TF-IDF)**: Content-Based Filtering analyzing authors and ratings.
+  - **Engine 3 (AR)**: Association Rules (Frequent Itemset Mining) to find hidden patterns.
+- **📊 Interactive Analytics**: Insights into library distribution and author trends.
+- **💎 Premium UI**: Modern dark theme with glassmorphism and smooth animations.
 
-It also provides a **Netflix-style interactive interface** for an engaging user experience.
+## 🛠️ Installation
 
----
+1. **Clone the repository** (or navigate to the folder).
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the App**:
+   ```bash
+   streamlit run app/App.py
+   ```
 
-## 🎯 Objective
-- Solve the problem of **book discovery in large libraries**
-- Provide **personalized recommendations**
-- Handle **cold-start problem for new users**
-- Improve **diversity and accuracy** of recommendations
-- Build an **interactive recommendation platform**
-
----
-
-## ⚙️ System Architecture
-
-### 🧩 3-Layer Architecture
-
-1. **Data Layer**
-   - Goodbooks-10K dataset
-   - 6M ratings, 10K books, 53K users
-
-2. **Recommendation Engine**
-   - Collaborative Filtering (SVD)
-   - Content-Based Filtering (TF-IDF)
-   - Association Rule Mining (FP-Growth)
-
-3. **Application Layer**
-   - Streamlit-based web interface
-   - Real-time recommendation updates
+## 🧠 Hybrid Logic Explained
+Lumina calculates a hybrid score for each book based on:
+- **70% Weight**: Collaborative Filtering (What similar users liked).
+- **20% Weight**: Content Similarity (Books with similar authors/stats).
+- **10% Weight**: Association Rules (Books frequently bought/read together).
+- **Popularity Boost**: A small bias towards culturally significant books to solve the cold-start problem.
 
 ---
-
-## 🧠 Approach
-
-### 1. Data Preprocessing
-- Removed duplicates & handled missing values
-- Normalized ratings
-- Created user-item matrix
-- Generated content features (tags, authors)
-
-### 2. Models Used
-
-#### 🔹 Collaborative Filtering
-- SVD (Matrix Factorization)
-- Learns user behavior patterns
-
-#### 🔹 Content-Based Filtering
-- TF-IDF + Cosine Similarity
-- Recommends similar books
-
-#### 🔹 Association Rule Mining
-- FP-Growth Algorithm
-- Finds "frequently read together" books
-
----
-
-## 🔥 Hybrid Recommendation System
-- Uses **Reciprocal Rank Fusion (RRF)**
-- Combines results from all models
-- Dynamic weighting:
-  - Active users → CF priority
-  - New users → Content + Popularity
-
----
-
-## 📊 Dataset
-**Goodbooks-10K Dataset**
-- 10,000 books
-- 6 million ratings
-- 53,000+ users
-- Includes metadata, tags, wishlist data
-
----
-
-## 📈 Results & Performance
-
-### 📌 Collaborative Filtering
-- Precision@10 → **0.26**
-- Recall@10 → **0.155**
-
-### 📌 Hybrid Model
-- Precision@15 → **0.0051**
-- Recall@15 → **0.0431**
-- Catalog Coverage → **7.92%**
-- Diversity Score → **1.0 (maximum)**
-
-👉 Focus: Balanced **accuracy + discovery + diversity**
-
----
-
-## 💡 Key Features
-- Triple Hybrid Recommendation System
-- Cold Start Solution (user onboarding)
-- Explainable AI ("Why this book?")
-- Wishlist & user history tracking
-- Netflix-style UI (Bookflix)
-- Real-time interaction updates
-
----
-
-## 🛠️ Tech Stack
-
-### 💻 Language
-- Python
-
-### ⚙️ Libraries
-- Pandas, NumPy
-- Scikit-learn
-- Surprise (SVD)
-- MLxtend (Apriori / FP-Growth)
-- Matplotlib, Seaborn
-- Streamlit
-
----
-
+*Created with ❤️ for book lovers.*
