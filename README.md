@@ -1,7 +1,7 @@
 
-📚 BOOKFLIX – Smart Library Book Recommender System
+# 📚 BOOKFLIX – Smart Library Book Recommender System
 
-🚀 Overview
+# 🚀 Overview
 
 BOOKFLIX is a hybrid book recommendation system designed to help users discover relevant books from large digital libraries. It combines multiple machine learning techniques to deliver personalized, diverse, and explainable recommendations.
 
@@ -17,7 +17,7 @@ Association Rule Mining (FP-Growth)
 
 ---
 
-🎯 Problem Statement
+# 🎯 Problem Statement
 
 With thousands of books available, users face:
 
@@ -35,7 +35,7 @@ Lack of explainability
 
 ---
 
-💡 Key Features
+# 💡 Key Features
 
 🔁 Hybrid Recommendation Engine (CF + CBF + ARM)
 
@@ -55,7 +55,7 @@ Lack of explainability
 
 ---
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 Category	Tools
 
@@ -72,7 +72,7 @@ Version Control	Git, GitHub
 
 ---
 
-📊 Dataset
+# 📊 Dataset
 
 Goodbooks-10K Dataset
 
@@ -87,7 +87,7 @@ Goodbooks-10K Dataset
 
 ---
 
-⚙️ System Architecture
+# ⚙️ System Architecture
 
 1. Data Layer
 
@@ -115,7 +115,7 @@ Real-time recommendations
 
 ---
 
-🧠 Methodology
+# 🧠 Methodology
 
 1. Data Cleaning & Preprocessing
 
@@ -136,7 +136,7 @@ Real-time recommendations
 
 ---
 
-📈 Results
+# 📈 Results
 
 🔹 Collaborative Filtering
 
@@ -161,7 +161,7 @@ Catalog Coverage: 7.92%
 
 ---
 
-🏆 Achievements
+# 🏆 Achievements
 
 Built a triple-hybrid recommendation system
 
@@ -175,7 +175,7 @@ Developed interactive Bookflix UI
 
 ---
 
-⚠️ Challenges Solved
+# ⚠️ Challenges Solved
 
 Data sparsity
 
@@ -189,7 +189,7 @@ Over-reliance on popular books
 
 ---
 
-🔮 Future Scope
+# 🔮 Future Scope
 
 Deep Learning models (NCF, BERT)
 
@@ -205,7 +205,7 @@ Multilingual support
 
 ---
 
-📌 How to Run
+# 📌 How to Run
 
 # Clone the repository
 git clone https://github.com/your-username/bookflix.git
@@ -222,7 +222,7 @@ streamlit run app.py
 
 ---
 
-📚 References
+# 📚 References
 
 Hybrid Recommender Systems – Burke (2002)
 
@@ -236,7 +236,7 @@ Content-Based Filtering – Pazzani & Billsus
 
 ---
 
-🙌 Author
+# 🙌 Author
 
 Tamanna Arora , Vanshita Rawat
 Data Science | Machine Learning Enthusiast
