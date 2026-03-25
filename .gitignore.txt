@@ -1,14 +1,26 @@
 # Ignore model files
 *.pkl
 
-# Ignore large datasets
+# Ignore datasets
 *.csv
 *.xls
 *.xlsx
 
-# Ignore data & models folders
+# Ignore data and model folders
 data/
 models/
 
-# Jupyter temp files
+# Ignore Jupyter Notebook temp files
 .ipynb_checkpoints/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
