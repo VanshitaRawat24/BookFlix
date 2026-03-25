@@ -207,16 +207,16 @@ Multilingual support
 
 # 📌 How to Run
 
-**Clone the repository**
+**Clone the repository** :
 git clone https://github.com/your-username/bookflix.git
 
-**Navigate to project folder**
+**Navigate to project folder** :
 cd bookflix
 
-**Install dependencies**
+**Install dependencies** :
 pip install -r requirements.txt
 
-**Run the app**
+**Run the app** :
 streamlit run app.py
 
 
